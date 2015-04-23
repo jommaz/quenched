@@ -4,7 +4,7 @@
 }
 
 body{
-	 padding: 50px 0;
+	/* padding: 50px 0;*/
 	 font-size: 13px;
 	 font-family: "Slabo 27px";
 	 font-style: normal;
@@ -15,17 +15,99 @@ body{
 h1{
 	 font-size: 64px;
 	 line-height: 73px;
-	 margin-bottom: 25px;
+	 /*margin-bottom: 25px;*/
 }
 
 p{
 	 font-size: 17px;
 	 line-height: 26px;
-	 margin-bottom: 35px;
+	 /*margin-bottom: 35px;*/
+}
+nav{
+	position: relative;
+	display: inline-block;
+	background-color: rgb(66,133,244);
+	font-size: 18px;
+	height: 110px;
+	width: 100%;
 }
 
-nav{
-	background-color: rgba(66,133,244,0.5);
+ul{
+	list-style: none;
+}
+
+nav li {
+	float: left;
+	width: 160px;
+	position: relative;
+}
+
+nav li a {
+	display: block;
+	padding: 7px 8px;
+	
+}
+
+nav ul li a:hover {
+	background-color: rgb(55,133,200);
+}
+
+nav ul li a:visited{
+	color: #CCC; 
+	display: block; 
+	text-decoration: none;
+}
+
+footer{
+	margin:0 auto;
+	text-align: left;
+	padding-top: 30px;
+	font-size: 18px;
+}
+#footer{
+	background-color: rgb(66,133,244);
+ 	width: 100%;
+ 	height: 150px; 
+ 	bottom: 0;
+ 	display: block;
+ 	float: left;
+ 	
+}
+#footer-wrapper{
+	width: 100%;
+	margin: 20px;
+	text-align: left;
+/*	padding-top: 100px;*/
+}
+#footer ul{
+	list-style-type: none; 
+	padding: 0;
+	margin: 0;
+}
+#footer ul li{
+	padding-bottom: 10px;
+	display: inline-block;
+	padding: 7px 8px;
+
+ }
+
+#footer ul li:hover{
+	background-color: rgb(55,133,200);
+}
+
+#footer ul li a:visited{
+	color: #CCC; 
+	display: block; 
+	text-decoration: none;
+}
+.icons{
+	margin-left:40px;
+}
+
+/*nav{
+	position: relative;
+	display: inline-block;
+	background-color: rgb(66,133,244);
 	font-size: 18px;
 	height: 50px;
 	width: 100%;
@@ -35,6 +117,12 @@ nav{
 ul li {
 	display: inline;
 }
+
+ul li a {
+	/*color: #fff;*/
+/*	text-decoration: none;
+	padding: 0px 25px;*/
+/*}*/*/
 
 /*p.weights{
 	 letter-spacing: 2px;

@@ -4,20 +4,44 @@
 		<title> Quenched </title>
 		<link rel= "stylesheet" type="text/css" href="/styles.css">
 		<script type="text/javascript" src ="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src = "/jquery.color.js"></script>
+		<script type="text/javascript" src = "/mainjs.js"></script>
 		<meta charset="UTF-8"/>
 	</head>
 
 <body>
-	<nav>
-		<ul>
-			<li href="/"> Quenched </li>
-			<li href="/whyDeliver"> Why Deliver? </li>
-			<li href="/Plans"> Plans </li>
-			<li href="aboutUs"> About Us </li>
-		</ul>
-	</nav>
+	<header>
+		<nav id = "header_nav">
+			<ul>
+				<li> <a href="/"> Quenched </a></li>
+				<li> <a href="/whyDeliver"> Why Deliver? </a> </li>
+				<li> <a href="/Plans"> Plans </a></li>
+				<li> <a href="/benefitsOfWater"> Benefits of Water </a></li>
+				<li> <a href="aboutUs"> About Us</a> </li>
+			</ul>
+		</nav>
+	</header>
 
 <%= yield %>
+
+		<footer>
+			<div id="footer">
+		    	<div id="footer-wrapper">
+		  	        <ul>
+			        	<li><a href=""> Careers </a></li>
+						<li><a href=""> News & Press </a></li>
+						<li><a href=""> Privacy Policy </a></li>
+						<li><a href=""> Help </a></li>
+		        	</ul>
+				</div> <!-- wrapper ends-->
+				<div class="icons">
+			           	<a href="https://twitter.com/" target="_blank"><img src="https://www.nasa.gov/sites/default/files/images/twitter-icon.png" width="48" height="48" alt="Twitter" /></a>
+						<a href="https://linkedin.com/" target="_blank"><img src="http://icons.iconarchive.com/icons/sicons/flat-shadow-social/128/linkedin-icon.png" width="48" height="48" alt="LinkedIn" /></a>
+						<a href="http://www.facebook.com" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-128.png" width="48" height="48" alt="Facebook" /></a>
+				</div> <!-- end icons div -->	
+	   		</div>
+		</footer>
+
 
 </body>
 </html>
