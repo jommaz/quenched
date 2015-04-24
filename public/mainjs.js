@@ -13,8 +13,9 @@ $(window).scroll(function(){
     } else {
         if ($nav.data('size') == 'small') {
             $nav.data('size','big').stop().animate({
-                height:'100px'
+                height:'140px'
             }, 600);
         }  
     }
 });
+

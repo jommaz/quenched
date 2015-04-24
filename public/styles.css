@@ -3,18 +3,93 @@
     src: url('Slabo27px.ttf');
 }
 
+.logo{
+	font-size: 18px;
+	font: #000
+}
+
+#mainCell{
+	border-style: solid;
+	border-color: rgb(66,133,244);
+	/*border-radius: 50%;*/
+	width: 100%;
+	height: 300px;
+	margin-bottom: 10px;
+}
+#secondCell{
+	border-style: solid;
+	border-color: rgb(66,133,244);
+	/*border-radius: 50%;*/
+	width: 100%;
+	height: 300px;
+	margin-bottom: 10px;
+}
+#thirdCell{
+	border-style: solid;
+	border-color: rgb(66,133,244);
+	/*border-radius: 50%;*/
+	width: 100%;
+	height: 300px;
+	margin-bottom: 10px;
+}
+#fourthCell{
+	border-style: solid;
+	border-color: rgb(66,133,244);
+	/*border-radius: 50%;*/
+	width: 100%;
+	height: 300px;
+	margin-bottom: 10px;
+}
+/*.box1{
+	position: relative;
+	display: block;
+  	margin: 0 auto;
+    float: left;
+    width: 20%;
+   	font-size: 1.2em;
+  	border-radius: 5px;
+  	line-height: 1;
+  	background-color: rgb(66,133,244);
+  	text-align: center;
+}*/
+
+
 body{
 	/* padding: 50px 0;*/
+	position: relative;
 	 font-size: 13px;
 	 font-family: "Slabo 27px";
 	 font-style: normal;
 	 font-weight: 400;
 }
 
+.section{
+	position: relative;
+	display: inline-block;
+    width:100%;
+    height:200px;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+
 
 h1{
-	 font-size: 64px;
+	 font-size: 34px;
 	 line-height: 73px;
+	 text-align: center;
+	 margin-top: 5px;
+	 margin-bottom: 0;
+}
+
+h2{
+	text-align: center;
+}
+
+h3{
+	 font-size: 18px;
+	 line-height: 73px;
+	 text-align: center;
+	 margin-top: 5px;
 	 /*margin-bottom: 25px;*/
 }
 
@@ -28,21 +103,26 @@ nav{
 	display: inline-block;
 	background-color: rgb(66,133,244);
 	font-size: 18px;
-	height: 110px;
+	height: 120px;
 	width: 100%;
+}
+
+a:link{
+	text-decoration: none
 }
 
 ul{
 	list-style: none;
+	margin-top: 0;
 }
 
-nav li {
+ul li {
 	float: left;
-	width: 160px;
+	width: 150px;
 	position: relative;
 }
 
-nav li a {
+ul li a {
 	display: block;
 	padding: 7px 8px;
 	
@@ -58,16 +138,16 @@ nav ul li a:visited{
 	text-decoration: none;
 }
 
-footer{
+/*footer{
 	margin:0 auto;
 	text-align: left;
 	padding-top: 30px;
 	font-size: 18px;
-}
+}*/
 #footer{
 	background-color: rgb(66,133,244);
  	width: 100%;
- 	height: 150px; 
+ 	height: 140px; 
  	bottom: 0;
  	display: block;
  	float: left;
@@ -77,6 +157,7 @@ footer{
 	width: 100%;
 	margin: 20px;
 	text-align: left;
+	font-size: 18px;
 /*	padding-top: 100px;*/
 }
 #footer ul{
@@ -86,6 +167,7 @@ footer{
 }
 #footer ul li{
 	padding-bottom: 10px;
+		width: 160px;
 	display: inline-block;
 	padding: 7px 8px;
 
@@ -103,107 +185,4 @@ footer{
 .icons{
 	margin-left:40px;
 }
-
-/*nav{
-	position: relative;
-	display: inline-block;
-	background-color: rgb(66,133,244);
-	font-size: 18px;
-	height: 50px;
-	width: 100%;
-	padding: 20px 0px;
-}
-
-ul li {
-	display: inline;
-}
-
-ul li a {
-	/*color: #fff;*/
-/*	text-decoration: none;
-	padding: 0px 25px;*/
-/*}*/*/
-
-/*p.weights{
-	 letter-spacing: 2px;
-	 font-size: 13px;
-	 color: rgba(173,173,173,1);
-	 margin-bottom: 35px;
-	 border-width: 0px 0px 1px 0px;
-	 border-style: dotted;
-	 margin-top: 45px;
-}
-
-p.pullquote{
-	 font-size: 17px;
-	 line-height: 26px;
-	 margin-bottom: 35px;
-	 padding-left: 15px;
-	 border-width: 0px 0px 0px 3px;
-	 border-style: solid;
-}
-
-p.map{
-	 font-weight: 400;
-	 font-style: normal;
-	 margin-bottom: 0px;
-	 text-align: justify;
-	 font-size: 27px;
-	 line-height: 54px;
-	 margin-top: 0px;
-}
-
-p.heading{
-	 letter-spacing: 2px;
-	 font-size: 13px;
-	 margin-bottom: 35px;
-	 border-width: 0px 0px 1px 0px;
-	 border-style: dotted;
-	 margin-top: 45px;
-	 color: rgba(0,0,0,1);
-}
-
-p.intro{
-	 margin-bottom: 35px;
-	 font-size: 21px;
-	 line-height: 28px;
-}
-
-p.inverse-big{
-	 background-color: rgba(51,51,51,1);
-	 color: rgba(255,255,255,1);
-	 padding: 30px;
-	 margin-bottom: 0px;
-}
-
-p.inverse-med{
-	 background-color: rgba(51,51,51,1);
-	 color: rgba(255,255,255,1);
-	 padding: 30px;
-	 margin-bottom: 0px;
-	 padding-top: 0px;
-	 font-size: 15px;
-}
-
-p.inverse-small{
-	 padding-top: 0px;
-	 padding-left: 30px;
-	 padding-right: 30px;
-	 padding-bottom: 30px;
-	 background-color: rgba(51,51,51,1);
-	 color: rgba(255,255,255,1);
-	 font-size: 13px;
-}
-
-p.inverse-heading{
-	 background-color: rgba(51,51,51,1);
-	 color: rgba(255,255,255,1);
-	 padding: 30px;
-	 margin-bottom: 0px;
-	 padding-bottom: 0px;
-	 font-size: 15px;
-	 letter-spacing: 2px;
-	 margin-top: 50px;
-}
-
-*/
+s
