@@ -1,21 +1,31 @@
-$(function(){
-    $('#header_nav').data('size','big');
+$(document).ready(function(){
+    $('.mini-logo').hide()
+})
+
+$(document).ready(function(){
+    var shrinkOn = 100;
+
+    $(window).scroll(function(){
+    var offy = $('header').offset().top;
+
+        if(offy > shrinkOn){
+            $('.logo').hide("slow");
+            $('.mini-logo').show("slow");
+        } 
+        else {
+        $('.logo').show("slow");
+        $('.mini-logo').hide("slow");
+        }
+    }); 
+ });
+
+$(document).ready(function(){
+    $("#dialog1").hide();
+    $("#plan1").click(function(){
+        $("#dialog1").dialog();
+    })
 });
 
-$(window).scroll(function(){
-    var $nav = $('#header_nav');
-    if ($('body').scrollTop() > 0) {
-        if ($nav.data('size') == 'big') {
-            $nav.data('size','small').stop().animate({
-                height:'40px'
-            }, 350);
-        }
-    } else {
-        if ($nav.data('size') == 'small') {
-            $nav.data('size','big').stop().animate({
-                height:'140px'
-            }, 600);
-        }  
-    }
-});
+
+
 

@@ -4,28 +4,31 @@
 		<title> Quenched </title>
 		<link rel= "stylesheet" type="text/css" href="/styles.css">
 		<script type="text/javascript" src ="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script type="text/javascript" src = "/jquery.color.js"></script>
+		<script type="text/javascript" src ="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<!-- 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> -->
 		<script type="text/javascript" src = "/flickity.pkgd.js"></script>
 		<script type="text/javascript" src = "/mainjs.js"></script>
 		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
 	</head>
-
-	<nav>
-		<div id = "header_nav">
-			<ul>
-				<li> <h1> <a href="/"> Quenched </a></h1></li>
-				<li> <h3><a href="/whyDeliver"> Why Deliver? </a></h3> </li>
-				<li> <h3><a href="/Plans"> Plans </a><h3></li>
-				<li> <h3><a href="/benefitsOfWater"> Benefits of Water </a><h3></li>
-				<li> <h3><a href="aboutUs"> About Us</a><h3> </li>
-				</ul>	
-		</div>
-	</nav>
-		
 	
 
-<body>
+	<body>
+		<header>
+			<div class="logo"> <a href="/"> Quenched</a></div>
+				<nav>
+					<ul class ="main-bar">
+						<li> <a class = "mini-logo" href="/"> Quenched </a></li>
+						<li> <a href="/whyDeliver"> Why Deliver? </a></li>
+						<li> <a href="/Plans"> Plans </a></li>
+						<li> <a href="/benefitsOfWater"> Benefits of Water </a></li>
+						<li> <a href="aboutUs"> About Us</a></li>
+					</ul>
+				</nav>
+	</header>
 	
+	<div class="container"></div>
 
 <%= yield %>
 
@@ -48,5 +51,5 @@
 		</footer>
 
 
-</body>
+	</body>
 </html>

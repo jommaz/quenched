@@ -10,6 +10,7 @@ http://flickity.metafizzy.co
 
 .flickity-viewport {
   overflow: hidden;
+  display: inline:
   position: relative;
   height: 100%;
 }
@@ -91,13 +92,14 @@ http://flickity.metafizzy.co
 .flickity-page-dots {
   position: absolute;
   width: 100%;
-  bottom: -25px;
+  bottom: 20px;
   padding: 0;
   margin: 0;
   list-style: none;
   text-align: center;
   line-height: 1;
   display: block;
+  z-index: 500;
 }
 
 .flickity-rtl .flickity-page-dots { direction: rtl; }
