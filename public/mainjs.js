@@ -26,6 +26,19 @@ $(document).ready(function(){
     })
 });
 
+$(document).ready(function(){
+    $("#dialog2").hide();
+    $("#plan2").click(function(){
+        $("#dialog2").dialog();
+    })
+});
+
+$(document).ready(function(){
+    $("#dialog3").hide();
+    $("#plan3").click(function(){
+        $("#dialog3").dialog();
+    })
+});
 
 
 
